@@ -8,15 +8,12 @@
 ```text
 .
 ├── README.md
-├── requirements.txt
-├── src/
-│   ├── dataset.py
-│   ├── model_unet.py
-│   ├── losses.py
-│   ├── metrics.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── visualize_compare_3ckpts.py
+├── dataset.py
+├── model_unet.py
+├── losses.py
+├── metrics.py
+├── train.py
+├── vis.py
 ├── data/
 │   └── stanford_background/
 │       ├── images/
@@ -28,8 +25,6 @@
 ├── vis_compare_topdiff/
 
 ````
-
----
 
 ## Environment Setup
 ```bash
@@ -63,6 +58,3 @@ checkpoints/best_dice.pth
 checkpoints/best_ce_dice.pth
 ```
 
-
-里面需要你自己改的地方主要有两个：
-`Results` 表格如果后面结果更新了就同步修改；`Checkpoints` 部分如果权重太大，就换成你的网盘或 release 链接。
